@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Task Board</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+
+  <div class="app">
+    <h1>Task Board</h1>
+
+    <div class="task-input">
+      <input type="text" id="taskInput" placeholder="Enter task name" />
+      <button id="addTask">Add Task</button>
+    </div>
+
+    <div class="filters">
+      <button data-filter="all" class="active">All</button>
+      <button data-filter="pending">Pending</button>
+      <button data-filter="completed">Completed</button>
+    </div>
+
+    <div id="taskList" class="task-list"></div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
